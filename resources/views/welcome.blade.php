@@ -1,24 +1,34 @@
 <x-layouts>
-    <section>
-        <h3 class="mb-6">Top Jobs</h3>
+    <div class="space-y-10">
+        <section>
+            <x-section-heading>Featured Jobs</x-section-heading>
 
-        <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
-                <div class="self-start text-sm">Employer</div>
+            <div class="grid lg:grid-cols-3 gap-8 mt-6">
+                <x-job-card />
+                <x-job-card />
+                <x-job-card />
+            </div>
+        </section>
 
-                <div class="py-8 font-bold">
-                    <h3>Video Producer</h3>
-                    <p>Full Time - From $60,000</p>
-                </div>
+        <section>
+            <x-section-heading>Tags</x-section-heading>
 
-                <div class="flex justify-between items-center mt-auto">
-                    <div>
-                       <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                       <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                       <a href="#" class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-xs transition-colors duration-300">Tag</a>
-                    </div>
+            <div class="mt-6 space-x-1">
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+            </div>
+        </section>
 
-                    <img src="http://placehold.it/42/42" alt="" class="rounded-xl">
-                </div>
-        </div>
-    </section>
+        <section>
+            <x-section-heading>Recent Jobs</x-section-heading>
+        </section>
+    </div>
 </x-layouts>
