@@ -8,16 +8,16 @@
     <title>Pixel Positions</title>
     @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
-<body>
-<div>
-    <nav class="flex justify-between">
+<body class="bg-black text-white">
+<div class="px-10">
+    <nav class="flex justify-between items-center py-4 border-b border-white/10">
         <div>
             <!--Logo-->
             <a href="/">
                 <img src="{{Vite::asset('resources/images/logo.svg')}}" alt="">
             </a>
         </div>
-        <div>
+        <div class="space-x-6 font-bold">
             <!--Navigation-->
             <a href="">Jobs</a>
             <a href="">Careers</a>
@@ -31,7 +31,7 @@
         </div>
     </nav>
 
-    <main>
+    <main class="mt-10 max-w-[986px]">
         {{ $slot }}
     </main>
 </div>
