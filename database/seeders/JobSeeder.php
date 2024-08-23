@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Job;
+use App\Models\Tag;
 use Illuminate\Database\Seeder;
 
 class JobSeeder extends Seeder
@@ -12,6 +13,8 @@ class JobSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $tags =Tag::factory(4)->create();
+
+        Job::factory(28)->hasAttached($tags)->create();
     }
 }
