@@ -4,7 +4,7 @@
             <h1 class="font-bold text-4xl">Let's Find Your Next Job</h1>
 
             <x-forms.form action="/search" class="mt-6">
-                <x-form.input :label="false" name="q" placeholder="Game Developer..." />
+                <x-forms.input :label="false" name="q" placeholder="Game Developer..." />
             </x-forms.form>
         </section>
         <section class="pt-10">
